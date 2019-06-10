@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection"content="telephone=no, email=no" />
+  <title>来一场说走就走的旅行</title>
+  <link href="./images/logo.ico" type="image/x-icon" rel="shortcut icon">
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/default.css" />
+  <script src="./js/jquery-3.3.1.js"></script>
+  <script src="./js/fitremtaobao.js"></script>
+  <!-- <script src="./js/vconsole.min.js"></script> -->
+</head>
+<body>
+  <div id="app">
+    <!-- 背景音乐 --> 
+    <div class="backMusic">
+      <audio src="./images/music.mp3" id="myAudio" loop></audio>
+      <div class="musio_btn" id="musio_btn">
+        <img src="./images/m_p.png" alt="" /><img src="./images/m_s.png" alt="" />
+      </div>
+    </div>
+    <!-- loading页 -->
+    <div class="loading page">
+      <h2>0%</h2>
+      <div class="progress"  style="width:0%;"></div>
+      <div class="start"><div><img src="./images/start.png" alt="" /></div></div>
+    </div>
+    <!-- 所有视频答题页 -->
+    <div class="videoPage page">
+      <ul>
+        <!-- 请选择性别  -->
+        <li class="videoPage">
+          <div class="video1 videoBox">
+            <video id="video1" src="./images/video_01.mp4" style="object-fit:fill" x-webkit-airplay="true" preload="auto" playsinline webkit-playsinline x5-playsinline x5-video-player-type="h5" x5-video-orientation="portrait"></video>
+          </div>
+        </li>
+        <li class="page1">
+          <div id="subject1" class="subjectBox">
+            <div class="subject_one">
+              <div class="subject_title"><img src="./images/texture1/page1_4.png" alt="" /></div>
+            </div>
+            <div class="subject_two flex-cen">
+              <div class="img"><img src="./images/texture1/page1_6.png" alt="" /><img src="./images/texture1/page1_5.png" alt="" /></div>
+              <div class="img"><img src="./images/texture1/page1_8.png" alt="" /><img src="./images/texture1/page1_7.png" alt="" /></div>
+            </div>
+            <div class="subject_three">
+              <div class="img btn1"><img src="./images/texture1/page1_3.png" alt="" /><img src="./images/texture1/page1_2.png" alt="" /></div>
+            </div>
+          </div>
+          <div class="subject_four">
+            <div class="flex-cen"><img src="./images/texture1/page1_9.png" alt="" /></div>
+          </div>
+        </li>
+        <!-- 整理行李箱 -->
+        <li class="page2">
+          <dl class="goods1">
+            <dd><img src="./images/texture2/page2_3.png" alt="" /></dd>
+            <dd><img src="./images/texture2/page2_4.png" alt="" /></dd>
+            <dd class="card"><img src="./images/texture2/page2_8.png" alt="" /></dd>
+            <dd class="card"><img src="./images/texture2/page2_10.png" alt="" /></dd>
+            <dd class="card"><img src="./images/texture2/page2_11.png" alt="" /></dd>
+            <dd><img src="./images/texture2/page2_22.png" alt="" /></dd>
+            <dd><img src="./images/texture2/page2_23.png" alt="" /></dd>
+            <dd><img src="./images/texture2/page2_5.png" alt="" /></dd>
+            <dd class="card"><img src="./images/texture2/page2_9.png" alt="" /></dd>
+          </dl>
+          <dl class="goods2">
+            <dd><img src="./images/texture2/page2_16.png" alt="" /></dd>
+            <dd><img src="./images/texture2/page2_17.png" alt="" /></dd>
+            <dd><img src="./images/texture2/page2_27.png" alt="" /></dd>
+            <dd><img src="./images/texture2/page2_29.png" alt="" /></dd>
+            <dd><img src="./images/texture2/page2_30.png" alt="" /></dd>
+            <dd><img src="./images/texture2/page2_28.png" alt="" /></dd>
+            <dd><img src="./images/texture2/page2_18.png" alt="" /></dd>
+            <dd><img src="./images/texture2/page2_19.png" alt="" /></dd>
+            <dd id="hand"><img src="./images/texture2/hand.png" /></dd>
+          </dl>
+          <div class="img btn1"> 
+            <img src="./images/texture2/page2_33.png" alt="" />
+            <img src="./images/texture2/page2_32.png" alt="" />
+          </div>
+          <div class="subject_four">
+            <div class="flex-cen"><img src="./images/texture2/page2_35.png" alt="" /></div>
+          </div>
+          <div class="guide"><img src="./images/texture2/page2_34.png" alt="" /></div>
+        </li>
+        <!-- 检查车辆 -->
+        <li class="page3">
+          <div id="subject2" class="subjectBox">
+            <div class="subject_one">
+              <div class="subject_title"><img src="./images/texture3/page3_9.png" alt="" /></div>
+            </div>
+            <div class="subject_two">
+              <!-- <div class="cart"><img src="./images/texture3/page3_2.png" alt="" /></div> -->
+              <div class="point">
+                <div class="point1 imgP"><img src="./images/texture3/page3_5.png" alt="" /></div>
+                <div class="point2 imgP"><img src="./images/texture3/page3_5.png" alt="" /></div>
+                <div class="point3 imgP"><img src="./images/texture3/page3_5.png" alt="" /></div>
+              </div>
+              <div class="people">
+                <div class="img"><img src="./images/texture3/page3_4.png" alt="" /><img src="./images/texture3/page3_3.png" alt="" /></div>
+              </div>
+             <!--  <div class="hand"><img src="./images/texture3/page4_22.png" alt="" /></div> -->
+            </div>
+            <div class="subject_three">
+              <div class="img btn1"><img src="./images/texture3/page4_16.png" alt="" /><img src="./images/texture3/page4_15.png" alt="" /></div>
+              <div class="img btn2"><img src="./images/texture3/page4_18.png" alt="" /><img src="./images/texture3/page4_17.png" alt="" /></div>
+              <img src="./images/texture3/page3_8.png" alt="" />
+            </div>
+            <div class="subject_four">
+              <div class="flex-cen"><img src="./images/texture3/alert_01.jpg" alt="" /></div>
+            </div> 
+            <div class="subject_five">
+              <div class="img btn3"><img src="./images/texture3/page4_10.png" alt="" /><img src="./images/texture3/page4_9.png" alt="" /></div>
+              <div class="imgList flex-cen">
+                <div class="img"><img src="./images/texture3/page4_4.png" alt="" /><img src="./images/texture3/page4_3.png" alt="" /></div>
+                <div class="img"><img src="./images/texture3/page4_6.png" alt="" /><img src="./images/texture3/page4_5.png" alt="" /></div>
+                <div class="img"><img src="./images/texture3/page4_8.png" alt="" /><img src="./images/texture3/page4_7.png" alt="" /></div>
+              </div>
+            </div>
+            <div class="subject_six">
+              <div class="flex-cen">
+                <div class="imgList">
+                  <img src="./images/texture3/page4_12.png" alt="" />
+                  <img src="./images/texture3/page4_13.png" alt="" />
+                  <img src="./images/texture3/page4_14.png" alt="" />
+                  <div class="img btn4"><img src="./images/texture3/page4_16.png" alt="" /><img src="./images/texture3/page4_15.png" alt="" /></div>
+                  <!-- <div class="btn4"></div> -->
+                </div>
+              </div>
+            </div>
+            <div class="subject_seven">
+              <div class="flex-cen">
+                <div class="imgList">
+                  <img src="./images/texture3/page4_21.png" alt="" />
+                  <div class="img btn5"><img src="./images/texture3/page4_20.png" alt="" /><img src="./images/texture3/page4_19.png" alt="" /></div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </li>
+        <!-- 超车 -->
+        <li class="page4">
+          <div class="video1 videoBox">
+            <!-- <video id="video2" src="./images/video_02.mp4" style="object-fit:fill" x-webkit-airplay="true" preload="auto" playsinline webkit-playsinline x5-playsinline x5-video-player-type="h5" x5-video-orientation="portrait"></video> -->
+          </div>
+          <div id="subject3" class="subjectBox subject_box">
+            <div class="subject_one">
+              <div class="subject_title"><img src="./images/texture4/page5_1.png" alt="" /></div>
+            </div>
+            <div class="subject_two">
+              <div class="img btn1"><img src="./images/texture4/page5_3.png" alt="" /><img src="./images/texture4/page5_2.png" alt="" /></div>
+              <div class="img btn2"><img src="./images/texture4/page5_5.png" alt="" /><img src="./images/texture4/page5_4.png" alt="" /></div>
+            </div>
+            <div class="subject_three fix">
+              <div class="fix_box">
+                <img src="./images/texture4/page5_6.png" alt="" />
+                <div class="img btn3"><img src="./images/texture4/page5_8.png" alt="" /><img src="./images/texture4/page5_7.png" alt="" /></div>
+              </div>
+            </div>  
+          </div>
+        </li>
+        <!-- 堵车 -->
+        <li class="page5">
+          <div class="video1 videoBox">
+            <!-- <video id="video3" src="./images/video_03.mp4" style="object-fit:fill" x-webkit-airplay="true" preload="auto" playsinline webkit-playsinline x5-playsinline x5-video-player-type="h5" x5-video-orientation="portrait"></video> -->
+          </div>
+          <div id="subject4" class="subjectBox subject_box">
+            <div class="subject_one">
+              <div class="subject_title"><img src="./images/texture5/page6_1.png" alt="" /></div>
+            </div>
+            <div class="subject_two">
+              <div class="img btn1"><img src="./images/texture5/page6_3.png" alt="" /><img src="./images/texture5/page6_2.png" alt="" /></div>
+              <div class="img btn2"><img src="./images/texture5/page6_5.png" alt="" /><img src="./images/texture5/page6_4.png" alt="" /></div>
+            </div>
+            <div class="subject_three fix">
+              <div class="fix_box">
+                <img src="./images/texture5/page6_6.png" alt="" />
+                <div class="img btn3"><img src="./images/texture5/page6_8.png" alt="" /><img src="./images/texture5/page6_7.png" alt="" /></div>
+              </div>
+            </div>  
+          </div>
+        </li>
+        <!-- 堵车后到达收费站 -->
+        <li class="page6">
+          <div class="video1 videoBox">
+            <!-- <video id="video4" src="./images/video_04.mp4" style="object-fit:fill" x-webkit-airplay="true" preload="auto" playsinline webkit-playsinline x5-playsinline x5-video-player-type="h5" x5-video-orientation="portrait"></video> -->
+          </div>
+          <div id="subject5" class="subjectBox subject_box">
+            <div class="subject_one">
+              <div class="subject_title"><img src="./images/texture6/page7_1.png" alt="" /></div>
+            </div>
+            <div class="subject_two">
+              <div class="img btn1"><img src="./images/texture6/page7_3.png" alt="" /><img src="./images/texture6/page7_2.png" alt="" /></div>
+              <div class="img btn2"><img src="./images/texture6/page7_5.png" alt="" /><img src="./images/texture6/page7_4.png" alt="" /></div>
+            </div>
+            <div class="subject_three fix">
+              <div class="fix_box">
+                <img src="./images/texture6/page7_6.png" alt="" />
+                <div class="img btn3"><img src="./images/texture6/page7_8.png" alt="" /><img src="./images/texture6/page7_7.png" alt="" /></div>
+              </div>
+            </div>  
+          </div>
+        </li>
+        <!-- 过了收费站要不要放松右脚 -->
+        <li class="page7">
+          <div class="video1 videoBox">
+            <!-- <video id="video5" src="./images/video_05.mp4" style="object-fit:fill" x-webkit-airplay="true" preload="auto" playsinline webkit-playsinline x5-playsinline x5-video-player-type="h5" x5-video-orientation="portrait"></video> -->
+          </div>
+          <div id="subject6" class="subjectBox subject_box">
+            <div class="subject_one">
+              <div class="subject_title"><img src="./images/texture7/page8_1.png" alt="" /></div>
+            </div>
+            <div class="subject_two">
+              <div class="img btn1"><img src="./images/texture7/page8_3.png" alt="" /><img src="./images/texture7/page8_2.png" alt="" /></div>
+              <div class="img btn2"><img src="./images/texture7/page8_5.png" alt="" /><img src="./images/texture7/page8_4.png" alt="" /></div>
+            </div>
+            <div class="subject_three fix">
+              <div class="fix_box">
+                <img src="./images/texture7/page8_6.png" alt="" />
+                <div class="img btn3"><img src="./images/texture7/page8_8.png" alt="" /><img src="./images/texture7/page8_7.png" alt="" /></div>
+              </div>
+            </div>  
+          </div>
+        </li>
+        <!-- 考虑要不要去服务区休息 -->
+        <li class="page8">
+          <div class="video1 videoBox">
+            <!-- <video id="video6" src="./images/video_06.mp4" style="object-fit:fill" x-webkit-airplay="true" preload="auto" playsinline webkit-playsinline x5-playsinline x5-video-player-type="h5" x5-video-orientation="portrait"></video> -->
+          </div>
+          <div id="subject7" class="subjectBox subject_box">
+            <div class="subject_one">
+              <div class="subject_title"><img src="./images/texture8/page9_1.png" alt="" /></div>
+            </div>
+            <div class="subject_two">
+              <div class="img btn1"><img src="./images/texture8/page9_3.png" alt="" /><img src="./images/texture8/page9_2.png" alt="" /></div>
+              <div class="img btn2"><img src="./images/texture8/page9_5.png" alt="" /><img src="./images/texture8/page9_4.png" alt="" /></div>
+            </div>
+            <div class="subject_three fix">
+              <div class="fix_box">
+                <img src="./images/texture8/page9_6.png" alt="" />
+                <div class="img btn3"><img src="./images/texture8/page9_8.png" alt="" /><img src="./images/texture8/page9_7.png" alt="" /></div>
+              </div>
+            </div> 
+          </div>    
+        </li>
+        <!-- 达到服务区休息 -->
+        <li class="page9">
+          <div class="video1 videoBox">
+            <!-- <video id="video7" src="./images/video_07.mp4" style="object-fit:fill" x-webkit-airplay="true" preload="auto" playsinline webkit-playsinline x5-playsinline x5-video-player-type="h5" x5-video-orientation="portrait"></video> -->
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- 生成海报页 -->
+    <div class="share page">
+      <div class="share_top"><img src="./images/texture9/page10_3.png" alt="" /><img src="./images/texture9/page10_4.png" alt="" /><img src="./images/texture9/page10_5.png" alt="" /></div>
+      <div class="share_bottom">
+        <img src="./images/texture9/page10_6.png" alt="" />
+        <img src="./images/texture9/page10_2.png" alt="" />
+      </div>
+      <div class="share_canvas">
+        <canvas id="myCanvas"></canvas>
+        <div class="poster">
+          <img src="./images/texture9/poster_01.jpg" alt="" />
+          <img src="./images/texture9/poster_02.jpg" alt="" />
+          <img src="./images/texture9/poster_03.jpg" alt="" />
+        </div>
+        <a href="javascript:;"></a>
+      </div>
+    </div>
+  </div>
+  <script src="./js/default.js"></script>
+  <!-- 微信jssdk引用 -->
+  <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+  <!-- 微信jssdk注册参数 -->
+  <script src="http://game.flyh5.cn/game/twolevel_autho/share.php?type=js&auth_appid=wx7c3ed56f7f792d84"></script>
+  <!-- 微信jssdk注册逻辑 -->
+  <script src="./js/wechatShart.js"></script>
+  <!-- 配置分享信息 -->
+  <script>
+    $(function(){
+      //分享标题
+      window.Title = "测试你的出行安全指数";
+      //分享地址
+      window.ShareUrl = window.location.href;
+      //分享图标
+      window.ShareImage = "http://game.flyh5.cn/resources/game/wechat/h5/zijiayou/images/logo.ico";
+      //分享内容
+      window.Desc = "做好出行的准备，才能无惧一切未知的挑战";
+    })
+  </script>
+  <!-- 禁止屏幕下拉 -->
+  <script>
+  // var VC = new VConsole();
+  document.querySelector('body').addEventListener('touchmove', function(e) {e.preventDefault();})
+  document.getElementById('app').addEventListener('touchmove', function(e) {e.preventDefault();})
+  </script>
+  <!-- 腾讯统计 -->
+  <script>
+    var _mtac = {"performanceMonitor":1,"senseQuery":1};
+    (function() {
+      var mta = document.createElement("script");
+      mta.src = "http://pingjs.qq.com/h5/stats.js?v2.0.4";
+      mta.setAttribute("name", "MTAH5");
+      mta.setAttribute("sid", "500647088");
+      mta.setAttribute("cid", "500647089");
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(mta, s);
+    })();
+  </script>
+</body>
+</html>
